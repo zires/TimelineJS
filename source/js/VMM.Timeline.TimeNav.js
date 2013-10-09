@@ -356,6 +356,7 @@ if(typeof VMM.Timeline != 'undefined' && typeof VMM.Timeline.TimeNav == 'undefin
 			}
 			
 			VMM.Lib.addClass(markers[current_marker].marker, "active");
+			VMM.Lib.attr(markers[current_marker].marker, "data-position", n);
 			
 			// ANIMATE MARKER
 			VMM.Lib.stop($timenav);
